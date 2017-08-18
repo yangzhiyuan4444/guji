@@ -1,0 +1,103 @@
+.user{
+    .xian{
+        border-bottom: solid .6rem gainsboro;
+            .user_1{
+                width: 18rem;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                .div{
+                    width: 1rem;height: 1rem;_background: red;
+                    position: absolute;right: .8rem;top: .8rem;
+                    z-index: 1;
+                    a{
+                        width: 1rem;height: 1rem;display: block;
+                    }
+                }
+            }
+            .user_2{
+                padding: 0 .5rem;
+                width: 18rem;
+                display: flex;
+                justify-content: space-between;
+                line-height: 3rem;
+                position: relative;
+                #bells{
+                    position: absolute;top: 1rem;
+                }
+                strong{
+                    margin-left: 1rem;
+                }
+                i{
+                    width: .8rem;
+                    height: .8rem;
+                    background: red;
+                    color: #fff;
+                    position: absolute;
+                    display: block;
+                    border-radius:50% ;
+                    text-align: center;
+                    line-height: .8rem;
+                    top: .6rem;
+                    left: 4.2rem;
+                }
+            }        
+        }  
+        .user_3{
+                width: 18rem;
+                ul{
+                    width: 18rem;
+                    display: flex;
+                    -webkit-justify-content: space-between;
+                    li{
+                        width: 50%;
+                        border-bottom: solid 1px #eee;
+                        text-align: center;
+                        a{
+                            width: 100%;
+                            display: inline-block;
+                            line-height: 2rem;
+                            text-decoration: none;
+                            color:grey ;
+                        }
+                    }
+                    li:nth-child(1){
+                        border-right:solid 1px #eee;
+                    }
+                    .as{
+                          border-bottom: solid 2px red;
+                          a{
+                              color: #000000;
+                          }
+                        }
+                }
+            }
+          .user_4{
+              width: 18rem;
+              padding:0 .5rem;
+              height: 4rem;
+              
+              ul{
+                  li{
+                      border-bottom: solid 1px #eee;margin-top: .5rem;
+                      display: flex;
+                      -webkit-justify-content: space-between;
+                     .yb{
+                          width: 30%;
+                          img{
+                              width: 80%;
+                              height: 80%;
+                          }
+                      }
+                      .yc{
+                          width: 70%;display: flex;
+                          -webkit-justify-content: space-between;
+                          span{
+                              margin-top: 1rem;
+                          }
+                      }
+                  }
+              }
+          }  
+}

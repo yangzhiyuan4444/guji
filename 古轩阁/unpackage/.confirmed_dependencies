@@ -1,0 +1,47 @@
+{
+  "html/user.html": {
+    "href": "html/user.html",
+    "priority": 0
+  },
+  "html/classify.html": {
+    "href": "html/classify.html",
+    "priority": 0
+  },
+  "html/gonglv.html": {
+    "href": "html/gonglv.html",
+    "resources": [
+      "js/jquery-3.1.1.min.js",
+      "bootstrap-3.3.7-dist/css/bootstrap.min.css"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "html/home.html": {
+    "href": "html/home.html",
+    "resources": [],
+    "refer": [
+      "html/gonglv.html"
+    ],
+    "priority": 0
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [
+      "js/angular.js",
+      "js/angular-route.js",
+      "js/iscroll.js",
+      "js/jquery-3.1.1.min.js",
+      "css/user.css",
+      "css/classify.css",
+      "css/index.css",
+      "bootstrap-3.3.7-dist/css/bootstrap.min.css",
+      "img/header.png"
+    ],
+    "refer": [
+      "html/user.html",
+      "html/classify.html",
+      "html/home.html"
+    ],
+    "priority": 0
+  }
+}

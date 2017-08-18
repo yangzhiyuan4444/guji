@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="format-detection" content="telephone=no email=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+        <script src="js/angular.js"></script>
+        <script src="js/angular-route.js"></script>
+        <script src="js/iscroll.js"></script>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/user.css"/>
+        <link rel="stylesheet" type="text/css" href="css/classify.css"/>
+        <link rel="stylesheet" type="text/css" href="css/index.css"/>
+        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<title></title>
+		<style>
+			*{
+				
+			}
+		</style>
+	</head>
+	<body ng-controller="myCtrl">
+	     <div class="content">
+	     	<header>
+		     	<div class="top">
+		     		<img src="img/header.png"/>
+		     	</div>
+		     </header>
+			<div ng-view=""></div>
+			<!--底部切换-->
+			<footer>
+				<div class="">
+					<ul>
+						<li class="lis">
+							<a href="#/yi">
+								<span class="glyphicon glyphicon-home"></span>
+								<br />
+								<span>首页</span>
+							</a>
+						</li>
+						<li>
+							<a href="#/er">
+							    <span class="glyphicon glyphicon-th-large"></span>
+							    <br />
+							    <span>分类</span>
+						    </a>
+						</li>
+						<li>
+							<a href="#/san">
+								<span class="glyphicon glyphicon-user"></span>
+							    <br />
+							    <span>个人中心</span>
+						    </a>
+						</li>
+					</ul>
+				</div>
+			</footer>
+	     </div>
+		<script>
+		var app=angular.module("myApp",["ngRoute"]);
+			app.controller("myCtrl",function($scope){
+
+			})
+			app.config(function($routeProvider){
+				$routeProvider
+				.when('/yi',{
+					templateUrl:"html/home.html",
+					controller:function($scope){
+						new IScroll(".count", {
+						scrollX: true, //水平方向能否滑动
+						freeScroll: true, //能否自由滑动
+						keyBindings: true, //是否支持键盘滑动
+						mouseWheel: true, //是否支持鼠标滚轮滑动
+						//			scrollbars:true,
+						//          scrollY:false,
+		                tap:true,
+					  }),
+					  $scope.u=128;
+					   $scope.ua=128;
+					    $scope.ub=128;
+					     $scope.uc=128;
+					      $scope.ud=128;
+					  $scope.us=128;
+					  $(".home_nav ul li").click(function(){
+						var i=$(this).index();
+						$(".home_nav ul li:eq("+i+")").addClass("li").siblings().removeClass("li");
+					});
+					}
+				})
+				.when('/er',{
+					templateUrl:"html/classify.html",
+					controller:function($scope){
+						$scope.a=false;
+						$scope.b=false;
+						$scope.c=false;
+						$scope.d=false;
+						$scope.e=false;
+						$scope.f=false;
+						$scope.g=false;
+						new IScroll(".laoda", {
+						scrollX: true, //水平方向能否滑动
+						freeScroll: true, //能否自由滑动
+						keyBindings: true, //是否支持键盘滑动
+						mouseWheel: true, //是否支持鼠标滚轮滑动
+						//			scrollbars:true,
+						//          scrollY:false,
+		                tap:true,
+					 });
+				    }
+				})
+				.when('/san',{
+					templateUrl:"html/user.html",
+					controller:function($scope){
+						$(function(){
+						$("#bells").animate({"font-size":"1rem"},500).animate({"font-size":".5rem"},500)
+							
+						$(".user_3 ul li").click(function(){
+						var i=$(this).index();
+						$(".user_3 ul li:eq("+i+")").addClass("as").siblings().removeClass("as");
+					   });
+					})
+					}
+				})
+//				.when('/si',{
+//					templateUrl:"html/four.html"
+//				})	
+				.otherwise({
+					redirectTo:"/yi"
+				})
+			})		
+			$("footer ul li").click(function(){
+				var i=$(this).index();
+				$("footer ul li:eq("+i+")").addClass("lis").siblings().removeClass("lis");
+			});
+			/****************************************************/
+			(function(win,doc){
+		        win.onresize = function(){change()}
+		        function change(){
+		        var wt = document.documentElement.clientWidth/(360/20);
+		        //根目录字体大小
+		       doc.documentElement.style.fontSize=wt+"px";
+		
+		  }
+		  change();
+		
+		})(window,document);
+	</script>
+	</body>
+	
+</html>

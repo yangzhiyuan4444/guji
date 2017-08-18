@@ -1,0 +1,87 @@
+.user .xian {
+  border-bottom: solid .6rem gainsboro; }
+  .user .xian .user_1 {
+    width: 18rem;
+    position: relative; }
+    .user .xian .user_1 img {
+      width: 100%; }
+    .user .xian .user_1 .div {
+      width: 1rem;
+      height: 1rem;
+      _background: red;
+      position: absolute;
+      right: .8rem;
+      top: .8rem;
+      z-index: 1; }
+      .user .xian .user_1 .div a {
+        width: 1rem;
+        height: 1rem;
+        display: block; }
+  .user .xian .user_2 {
+    padding: 0 .5rem;
+    width: 18rem;
+    display: flex;
+    justify-content: space-between;
+    line-height: 3rem;
+    position: relative; }
+    .user .xian .user_2 #bells {
+      position: absolute;
+      top: 1rem; }
+    .user .xian .user_2 strong {
+      margin-left: 1rem; }
+    .user .xian .user_2 i {
+      width: .8rem;
+      height: .8rem;
+      background: red;
+      color: #fff;
+      position: absolute;
+      display: block;
+      border-radius: 50%;
+      text-align: center;
+      line-height: .8rem;
+      top: .6rem;
+      left: 4.2rem; }
+.user .user_3 {
+  width: 18rem; }
+  .user .user_3 ul {
+    width: 18rem;
+    display: flex;
+    -webkit-justify-content: space-between; }
+    .user .user_3 ul li {
+      width: 50%;
+      border-bottom: solid 1px #eee;
+      text-align: center; }
+      .user .user_3 ul li a {
+        width: 100%;
+        display: inline-block;
+        line-height: 2rem;
+        text-decoration: none;
+        color: grey; }
+    .user .user_3 ul li:nth-child(1) {
+      border-right: solid 1px #eee; }
+    .user .user_3 ul .as {
+      border-bottom: solid 2px red; }
+      .user .user_3 ul .as a {
+        color: #000000; }
+.user .user_4 {
+  width: 18rem;
+  padding: 0 .5rem;
+  height: 4rem; }
+  .user .user_4 ul li {
+    border-bottom: solid 1px #eee;
+    margin-top: .5rem;
+    display: flex;
+    -webkit-justify-content: space-between; }
+    .user .user_4 ul li .yb {
+      width: 30%; }
+      .user .user_4 ul li .yb img {
+        width: 80%;
+        height: 80%; }
+    .user .user_4 ul li .yc {
+      width: 70%;
+      display: flex;
+      -webkit-justify-content: space-between; }
+      .user .user_4 ul li .yc span {
+        margin-top: 1rem; }
+
+/*# sourceMappingURL=user.css.map */

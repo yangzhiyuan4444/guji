@@ -1,0 +1,61 @@
+.classify_header {
+  width: 18rem;
+  height: 2.8rem;
+  padding: .4rem;
+  border-bottom: gray solid 1px; }
+  .classify_header div {
+    height: 1.7rem;
+    display: flex;
+    border: solid 1px gray;
+    border-radius: 0.5rem;
+    background-color: #F0F0F0; }
+    .classify_header div input {
+      width: 15rem;
+      height: 1.5rem;
+      border: none;
+      outline: none;
+      _border: solid 1px red;
+      text-indent: 0.5rem;
+      background-color: #F0F0F0; }
+    .classify_header div span {
+      font-size: 1rem;
+      margin: .35rem;
+      color: red; }
+
+.laoda {
+  position: absolute;
+  height: 25rem;
+  top: 4rem;
+  overflow: hidden; }
+  .laoda .classify_content {
+    width: 18rem; }
+    .laoda .classify_content .classify_one {
+      padding: 0 0.5rem;
+      display: flex;
+      -webkit-justify-content: space-between;
+      color: #666;
+      border-bottom: solid 1px #eee; }
+      .laoda .classify_content .classify_one h4 {
+        line-height: 1.5rem; }
+        .laoda .classify_content .classify_one h4 img {
+          width: 30%;
+          height: 80%; }
+        .laoda .classify_content .classify_one h4 strong {
+          font-size: .8rem; }
+      .laoda .classify_content .classify_one span {
+        margin-top: .9rem; }
+    .laoda .classify_content .classify_twe {
+      _width: 18rem;
+      background-color: #F0F0F0;
+      line-height: 4rem; }
+      .laoda .classify_content .classify_twe ul {
+        width: 18rem;
+        display: flex;
+        justify-content: space-around; }
+        .laoda .classify_content .classify_twe ul li a {
+          text-decoration: none;
+          color: #666; }
+        .laoda .classify_content .classify_twe ul li a:hover {
+          color: #000000; }
+
+/*# sourceMappingURL=classify.css.map */
